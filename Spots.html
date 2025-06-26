@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link href="Spots.css" rel="stylesheet" type="text/css">
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logowhite.png" class="logo">
+                <ul><strong>
+                    <li><a href="#" onclick="fadeOutAndRedirect('MainPage.html');">Home</a></li>
+                    <li><a href="#" onclick="fadeOutAndRedirect('Delicacies.html');">Delicacies</a></li>
+                    <li><a href="#" onclick="fadeOutAndRedirect('Spots.html');">Spots</a></li>
+                    <li><a href="#" onclick="fadeOutAndRedirect('About.html');">About</a></li></strong>
+                </ul>
+            </div>
+            <hr id="undernav">
+            <br><br><br><br><br>
+
+            <script>
+                function fadeOutAndRedirect(url) {
+                    document.body.style.opacity = '0';
+                    setTimeout(function() {
+                        window.location.href = url;
+                    }, 500); 
+                }
+            </script>
+
+            <section id="service">
+                <div class="title-text">
+                    <p>From Farm to Fork: Experience Freshness and Flavor in Sariaya's Restaurants!</p>
+                    <h1>TOP SPOTS</h1><br>
+                    <hr>
+                </div>
+                <br>
+                <div class="service-box">
+                    <div class="single-service">
+                        <a href="https://www.facebook.com/kaperosakinaamamangjuan">
+                        <img src="images/spots/kape rosa/KapeRosa.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>Kape Rosa Kina Amamang Juan</h3>
+                            <hr>
+                            <p>Purok 7 Barangay Mamala I, Sariaya Quezon</p>
+                        </div>
+                        </a>
+                    </div>
+                   
+                    <div class="single-service">
+                        <a href="https://www.facebook.com/mtbanahawviewdeckandcabin">   
+                        <img src="images/spots/kape rosa/ViewDeck.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>Mt. Banahaw Viewdeck & Cabin</h3>
+                            <hr>
+                            <p>Purok 7, Brgy. Mamala I, Sariaya Quezon</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="single-service">
+                        <a href="https://www.facebook.com/jardindepio">
+                            <img src="images/spots/kape rosa/JardinDePio2.jpg">
+                            <div class="overlay"></div>
+                            <div class="service-desc">
+                                <h3>Jardin de Pio</h3>
+                                <hr>
+                                <p>No. 113 National Highway cor Mangosteen Street, Brgy Calumpang, Tayabas-Sariaya Quezon</p>
+                            </div>
+                            </a>
+                    </div>
+
+                    <div class="single-service"> 
+                        <a href="https://www.facebook.com/cafelokalsariaya">
+                        <img src="images/spots/kape rosa/KapeLokal2.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>Cafè Lokal Sariaya Bypass</h3>
+                            <hr>
+                            <p>Magdami Street Brgy. 2, Sariaya, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="single-service"> 
+                        <a href="https://www.facebook.com/Koperight">
+                        <img src="images/spots/kape rosa/KopeRight.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>KOPE-right</h3>
+                            <hr>
+                            <p>SARIAYA BYPASS ROAD, Brgy. Sampaloc II, Sariaya Quezon</p>
+                        </div>
+                    </div>
+
+                    <div class="single-service"> 
+                        <a href="https://www.facebook.com/CafeKalayu">
+                        <img src="images/spots/kape rosa/CafeKalayu2.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>Cafe Kalayu</h3>
+                            <hr>
+                            <p>Purok 7 Sampaloc 1 Mamala Sariaya Quezon</p>
+                        </div>
+                    </div>
+
+                    <div class="single-service"> 
+                        <a href="https://www.facebook.com/chilldeckrestobar">
+                        <img src="images/spots/kape rosa/ChillDeckRestobar.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>Chill Deck Restobar</h3>
+                            <hr>
+                            <p>Quezon ave. Doña Concha Corner Lot, Mamala II, Sariaya Quezon</p>
+                        </div>
+                    </div>
+
+                    <div class="single-service"> 
+                        <a href="https://www.facebook.com/profile.php?id=100078645441606">
+                        <img src="images/spots/kape rosa/florencia.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc">
+                            <h3>La Florencia Farm and Restaurant</h3>
+                            <hr>
+                            <p>Villa Salvamen Subd. Brgy. Gibanga Sariaya Quezon</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <button class="scroll-to-top">↑</button>
+            <script>
+                document.querySelector('.scroll-to-top').addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            </script>
+
+            <script>
+                document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    scrollToTop(); 
+                });
+            </script>
+    </body>
+</html>

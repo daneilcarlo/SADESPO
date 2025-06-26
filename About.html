@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="About.css" rel="stylesheet" type="text/css">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logoblack.png" class="logo">
+            <ul><strong>
+                <li><a href="#" onclick="fadeOutAndRedirect('MainPage.html');">Home</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('Delicacies.html');">Delicacies</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('Spots.html');">Spots</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('About.html');">About</a></li></strong>
+            </ul>
+        </div>
+
+        <script>
+            function fadeOutAndRedirect(url) {
+                document.body.style.opacity = '0';
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 500); 
+            }
+        </script>
+
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Welcome to our website! We are dedicated to providing you with the best...</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h3>Why SaDesPo is created?</h3> 
+        <p>The objectives outline the specific goals of providing couples with curated romantic 
+            spots and promoting the local culinary heritage to residents and visitors, aiming to 
+            improve experiences and boost tourism. <br><br>
+
+            The vision sets a long-term goal of establishing Sariaya, Quezon, as a renowned destination 
+            known for its romantic ambiance, unique flavors, and vibrant food culture, which would 
+            ultimately enhance tourism and community pride. <br><br>
+            
+            The mission outlines the strategies and actions to achieve these goals, including showcasing 
+            romantic destinations and culinary treasures, providing comprehensive guides and engaging 
+            content, and supporting local businesses and artisans to preserve the cultural heritage of 
+            Sariaya, Quezon, for future generations. <br><br>
+            
+            Overall, "Sadespo" is a project or initiative aimed at promoting tourism and 
+            celebrating the cultural richness of Sariaya, Quezon, through romantic and culinary experiences.
+        </p>
+    </div>
+
+    <h3>Contact Information:</h3>
+    <section id="service">
+        <div class="service-box">
+            <div class="single-service">
+                <img src="pictureofme.jpg" alt="Picture of Daneil Carlo Masagnay">
+            </div>
+            <div class="desc">
+                <p>
+                    Hello! My name is Daneil Carlo Masagnay and I'm gonna help you find your way here in Sariaya, Quezon. 
+                    I have a passion for programming and enjoy coding. With a background in basic coding of a website, I strive to 
+                    become a much more creative individual. I'm dedicated in pursuing my goals, 
+                    and I'm always eager to become a man that I wanted to be. <br><br>
+                    <li>Phone number: <a href="tel:+639473408426">09473408426</a></li>
+                    <li>Email address: <a href="mailto:dcvmsgny@gmail.com">dcvmsgny@gmail.com</a></li>
+                    <li>Address: <a href="https://maps.app.goo.gl/y8RXSRYsuZk6mm5o8">Barangay Gibanga Purok 1 Sariaya, Quezon</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/dc.villota.16">Daneil Carlo Masagnay (DC)</a></li>
+                </p>
+                <br>
+                <p>
+                    Message:
+                    <form action="" method="post">
+                        <input type="text" name="message" placeholder="Type your message here" required>
+                        <button href="About.html" type="submit">Send</button>
+                    </form>
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <button class="scroll-to-top">↑</button>
+    <script>
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

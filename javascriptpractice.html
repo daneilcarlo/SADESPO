@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write("<h1>Hello, World!</h1>"); 
+        </script>
+        <p id="demo">JavaScript</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Content Changed!"'>change me</button>
+        <button type="button" onclick='document.getElementById("demo").style.color="red"'>paint me red</button>
+        <button type="button" onclick='document.getElementById("demo").style.display="none"'>hide me</button>
+        <button type="button" onclick='document.getElementById("demo").style.display="block"'>show me</button>
+        <button type="button" onclick='document.getElementById("demo").style=""'>Click Me!</button>
+        <br><br><br>
+
+        <div id="target" title="box" style="width:100px; height:100px; background:green">box</div>
+
+        <button onclick='document.getElementById("target").title="Box A"'>A</button>
+        <button onclick='document.getElementById("target").title="Box B"'>B</button>
+
+        <h2>Demo JavaScript in Body</h2>
+        <p id="demo2">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        <script>
+            function myFunction()
+            {
+                document.getElementById("demo2").innerHTML="paragraph changed";
+            }
+        </script>
+
+        <h3>Demo External JavaScript</h3>
+        <p id="demo3">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        <script src="myScript.js"></script>
+
+    </body>
+</html>

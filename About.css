@@ -1,0 +1,265 @@
+/* about stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+   width: 100%;
+   height: 100%;
+}
+
+body {
+    transition: opacity 1s ease-in-out;
+}
+
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.75)),url(try.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 -8px 16px rgba(0, 0, 0, 0.5); /* Add shadow above and below */
+    z-index: 3;
+}
+
+.navbar
+{
+    border-color: black;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background: white;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 15%);
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+    top: 0;
+}
+
+.navbar img {
+    padding-left: 50px;
+}
+
+.navbar ul {
+    padding-right: 50px;    
+}
+
+.logo
+{
+    width: 300px;
+    cursor: pointer;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a
+{
+ text-decoration: none;
+ color: black;
+ text-transform: uppercase;
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1
+{
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-shadow: 2px black;
+    transition: ease 0.3s;
+}
+
+
+  
+.content h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .container2 
+  {
+      position: relative;
+      grid-template-columns: auto auto auto;
+      gap: 5%;
+      padding: 35px;
+      margin-top: 50px;
+      margin-left: 35px;
+      margin-right: 34px;
+      border-radius: 10px;
+      font-size: 20px;
+      color: black;
+      background-color: white;
+      box-shadow: 5px 5px 10px #3b3737;
+      text-align: justify;
+  }
+  
+h3
+{
+    font-size: 30px;
+}
+  
+
+  #service
+  {
+      gap: 5%;
+      position: relative;
+      background-color: white;
+      padding-top: 50px;
+      color: black;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+      z-index: -1;
+  }
+
+  .service-box {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+.service-container {
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.single-service {
+    flex-basis: 20%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 0;
+    color: white;
+    position: relative;
+    overflow: hidden; /* Hide the overlay initially */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.desc {
+    flex-basis: 80%;
+    padding-left: 20px;
+    
+}
+
+.desc a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.desc a {
+    text-decoration: none; /* Remove underline by default */
+    color: black; /* Set color to black */
+}
+
+.desc a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.desc p {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 10px #3b3737;
+    object-fit: cover;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+form {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

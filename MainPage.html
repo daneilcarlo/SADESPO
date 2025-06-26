@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="MainPage.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+    
+    <div class="banner">
+        <div class="navbar">
+            <img src="logoblack.png" class="logo">
+            <ul><strong>
+                <li><a href="#" onclick="fadeOutAndRedirect('MainPage.html');">Home</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('Delicacies.html');">Delicacies</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('Spots.html');">Spots</a></li>
+                <li><a href="#" onclick="fadeOutAndRedirect('About.html');">About</a></li></strong>
+            </ul>
+        </div>
+        <hr id="undernav">
+        <div class="content">
+            <h1>BROWSE TO YOUR HEART'S CONTENT</h1>
+            <hr id="underh1">
+            <P>Sariaya, Quezon: Where every bite is a journey, and every sight a delight.</P>
+            <hr id="undercp">
+        </div>
+    </div>
+    <!-- Rest of your HTML content -->
+
+    <script>
+        function fadeOutAndRedirect(url) {
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500); // Adjust the timeout duration as needed for your desired transition time
+        }
+    </script>
+
+    <div class="container2">
+
+        <p><br>
+        <h3>Objectives </h3> <br>
+        <p>  1. To provide couples with a carefully curated list of romantic and 
+            memorable dating spots in Sariaya, Quezon, thereby improving their 
+            experiences and promoting tourism in the area. <br><br>
+            2. To celebrate and promote Sariaya, Quezon's rich culinary heritage 
+            by introducing local delicacies and traditional dishes to both residents 
+            and visitors.
+        </p><br>
+        <hr>
+
+        <br>
+        <h3>Vision</h3><br>
+        <p>
+            To establish Sariaya, Quezon, as a destination renowned for its romantic 
+            ambiance, distinctive flavors, and vibrant food culture, thereby enhancing 
+            tourism and fostering community pride.</p><br>
+        <hr>
+
+        <br>
+        <h3> Mision</h3><br>
+        <p>
+            Our goal is to highlight the beauty and charm of Sariaya, Quezon, by 
+                showcasing its diverse range of romantic dating destinations and culinary 
+                treasures. Through comprehensive guides, engaging content, and culinary 
+                experiences, we aim to inspire unforgettable memories, strengthen relationships, 
+                and promote sustainable tourism in the area. By supporting local businesses, farmers, 
+                and artisans, we aim to preserve and promote the cultural heritage of Sariaya, Quezon, 
+                ensuring its legacy for future generations to enjoy.</p><br>
+                <hr><br>
+                <div class="gilas">
+                    <P>Gilas Sariaya! <br>
+                        - Sariaya-yahin
+                    </P>
+            </div>
+
+    </div>
+    <br><br>
+
+    <button class="scroll-to-top">↑</button>
+    <script>
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body>
+</html>
